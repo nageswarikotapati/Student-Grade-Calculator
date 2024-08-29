@@ -1,0 +1,1 @@
+The Student Grade Calculator is a web-based application that allows students to input their grades for various subjects and calculates their percentage and grade based on predefined criteria. The app provides functionality to show, save, and print the results.
