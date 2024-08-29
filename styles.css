@@ -1,0 +1,127 @@
+/* Reset margin, padding, and box-sizing for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style the body with a background color and font settings */
+body {
+    background: #0a394a; /* Dark green background */
+    font-family: 'Righteous', cursive; /* Ensure the font is applied */
+    font-size: 10px; /* Increased base font size */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container styling to center and constrain the layout */
+.container {
+    background: #ffffff; /* White background for the container */
+    border-radius: 12px; /* More rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow */
+    max-width: 350px; /* Increased maximum width */
+    width: 90%; /* Responsive width */
+    padding: 10px; /* Increased padding */
+    text-align: center; /* Centered text */
+}
+
+/* Style for the form */
+.form-group {
+    margin-bottom: 6px; /* Spacing between form elements */
+}
+
+/* Style input fields */
+input[type="number"] {
+    margin: 2px 0; /* Margin for spacing */
+    padding: 6px; /* Padding inside the input */
+    border: 1px solid #ccc; /* Slightly darker border */
+    border-radius: 4px; /* Slightly more rounded corners */
+    width: calc(100% - 20px); /* Full width minus padding */
+    font-size: 0.9rem; /* Font size */
+}
+
+/* Button container */
+.button-container {
+    display: flex;
+    flex-wrap: wrap; /* Wrap buttons to new lines */
+    gap: 8px; /* Space between buttons */
+}
+
+/* Button styling */
+.form-button, .reset-button, .save-button, .print-button {
+    background-color: #007bff; /* Blue background */
+    color: #ffffff; /* White text */
+    border: none; /* No border */
+    padding: 8px; /* Padding inside the button */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    flex: 1 1 calc(50% - 10px); /* Make buttons take up half of the container width, minus gap */
+    font-size: 1rem; /* Slightly larger font size */
+    text-align: center; /* Center text */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.form-button:hover, .save-button:hover, .print-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.reset-button {
+    background-color: #dc3545; /* Red background */
+}
+
+.reset-button:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+/* Showdata styling */
+.showdata {
+    color: #333; /* Darker text color for better readability */
+    font-size: 1rem; /* Font size */
+    padding-top: 5px; /* Padding on top */
+    padding-bottom: 5px; /* Padding on bottom */
+    line-height: 1.2; /* Line height for better readability */
+}
+
+/* Table styling */
+table {
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* Collapse borders */
+    margin: 10px 0; /* Margin around the table */
+}
+
+table, th, td {
+    border: 1px solid #ddd; /* Light gray border */
+}
+
+th, td {
+    padding: 8px; /* Padding inside cells */
+    text-align: left; /* Left-align text */
+}
+
+th {
+    background-color: #f4f4f4; /* Light gray background for headers */
+}
+
+/* Highlight fail subjects */
+.fail {
+    background-color: #f8d7da; /* Light red background */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 500px) {
+    body {
+        font-size: 12px; /* Adjust base font size for smaller screens */
+    }
+
+    .container {
+        padding: 15px; /* Less padding for smaller screens */
+    }
+
+    /* Adjust button sizes for smaller screens */
+    .form-button, .reset-button, .save-button, .print-button {
+        flex: 1 1 100%; /* Buttons take full width on small screens */
+    }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grade Calculator</title>
+    <!-- Link for font -->
+    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet" />
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Main HTML -->
+    <div class="container">
+        <h1>Student Grade Calculator</h1>
+        <form id="gradeForm">
+            <div class="form-group">
+                <input type="number" placeholder="TELUGU" id="telugu" min="0" max="100" oninput="validateInput(this)" />
+            </div>
+            <div class="form-group">
+                <input type="number" placeholder="HINDI" id="hindi" min="0" max="100" oninput="validateInput(this)" />
+            </div>
+            <div class="form-group">
+                <input type="number" placeholder="ENGLISH" id="english" min="0" max="100" oninput="validateInput(this)" />
+            </div>
+            <div class="form-group">
+                <input type="number" placeholder="MATHEMATICS" id="mathematics" min="0" max="100" oninput="validateInput(this)" />
+            </div>
+            <div class="form-group">
+                <input type="number" placeholder="SCIENCE" id="science" min="0" max="100" oninput="validateInput(this)" />
+            </div>
+            <div class="form-group">
+                <input type="number" placeholder="SOCIAL" id="social" min="0" max="100" oninput="validateInput(this)" />
+            </div>
+            <div class="form-group">
+                <input type="button" value="Show Percentage" class="form-button" onclick="calculate()" />
+            </div>
+            <!-- Button Container -->
+            <div class="button-container">
+                <button type="button" class="reset-button" onclick="resetForm()">Reset</button>
+                <button type="button" class="save-button" onclick="saveResults()">Save Results</button>
+                <button type="button" class="print-button" onclick="printResults()">Print Results</button>
+            </div>
+        </form>
+        <!-- For showing the result -->
+        <div class="form-group showdata">
+            <p id="showdata"></p>
+        </div>
+    </div>
+
+    <!-- Link to JavaScript file -->
+    <script src="scripts.js"></script>
+</body>
+
+</html>
